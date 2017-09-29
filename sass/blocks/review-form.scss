@@ -1,32 +1,8 @@
-.review-form {
-
-}
-
 .review-form__fieldset {
   border: none;
 
   padding: 0;
   margin: 0;
-
-  &--name {
-
-  }
-
-  &--contact {
-
-  }
-
-  &--impression {
-
-  }
-
-  &--attraction {
-
-  }
-
-  &--emotions {
-
-  }
 }
 
 .review-form__legend {
@@ -44,20 +20,8 @@
   margin: 0;
 }
 
-.review-form__item {
-
-}
-
 .review-form__label {
   font-height: 26px;
-
-  &--name {
-
-  }
-
-  &--contact {
-
-  }
 
   &--impression {
     font-size: 18px;
@@ -70,10 +34,6 @@
     font-weight: 700;
     color: black;
   }
-}
-
-.review-form__sup {
-
 }
 
 .review-form__input {
@@ -89,22 +49,6 @@
     font-height: 26px;
     font-weight: 700;
     color: black;
-  }
-
-  &--name {
-
-  }
-
-  &--contact {
-
-  }
-
-  &--impression {
-
-  }
-
-  &--attraction {
-
   }
 }
 
