@@ -1,0 +1,17 @@
+.site-list {
+  font-size: 18px;
+  font-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+
+  list-style: none;
+}
+
+.site-list__item {
+  background-color: $blue;
+}
+
+.site-list__link {
+  color: white;
+}

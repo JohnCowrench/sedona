@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -10,7 +11,7 @@
   <nav class="page-header__general-nav general-nav">
     <button class="general-nav__toggle general-nav__toggle--open" type="button">Открыть меню</button>
     <a href="index.html" class="general-nav__logo">
-      <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Седоны" class="general-nav__logo-img">
+      <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны" class="general-nav__logo-img">
     </a>
     <ul class="general-nav__site-list site-list">
       <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
@@ -29,7 +30,7 @@
 
   <h1 class="page-main__page-title page-title">Оставьте свой отзыв</h1>
 
-  <p class="page-main__page-description page-description">
+  <p class="page-main__form-description form-description">
     Помогите нашим отелям стать лучше! <br>
     Оставьте отзыв о них, а также о <br>
     посещенных вами - <br>
@@ -42,7 +43,7 @@
         <legend class="review-form__legend">Представьтесь:</legend>
         <ul class="review-form__list">
           <li class="review-form__item">
-            <label for="input-name" class="review-form__label review-form__label--name">Имя<sup>*</sup>:</label>
+            <label for="input-name" class="review-form__label review-form__label--name">Имя<sup class="review-form__sup">*</sup>:</label>
             <input type="text" name="name" id="input-name" class="review-form__input review-form__input--name" placeholder="Петр">
           </li>
           <li class="review-form__item">
@@ -59,33 +60,33 @@
         <legend class="review-form__legend">Контактная информация:</legend>
         <ul class="review-form__list">
           <li class="review-form__item">
-            <label for="input-tel" class="review-form__label review-form__label--contact">Контактный телефон<sup>*</sup>:</label>
+            <label for="input-tel" class="review-form__label review-form__label--contact">Контактный телефон<sup class="review-form__sup">*</sup>:</label>
             <input type="tel" name="tel" id="input-tel" class="review-form__input review-form__input--contact" placeholder="Введите телефон">
           </li>
           <li class="review-form__item">
-            <label for="input-email" class="review-form__label review-form__label--contact">Электронная почта<sup>*</sup>:</label>
+            <label for="input-email" class="review-form__label review-form__label--contact">Электронная почта<sup class="review-form__sup">*</sup>:</label>
             <input type="email" name="email" id="input-email" class="review-form__input review-form__input--contact" placeholder="Введите e-mail">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review-form__fieldset--impression">
+      <fieldset class="review-form__fieldset review-form__fieldset--impression">
         <legend class="review-form__legend">Ваше общее впечатление:</legend>
         <ul class="review-form__list">
           <li class="review-form__item review-form__item--impression">
-            <input type="radio" name="impression" value="positive" id="input-positive" class="review-form__input review-form__input--impresion" checked>
+            <input type="radio" name="impression" value="positive" id="input-positive" class="review-form__input review-form__input--impression" checked>
             <label for="input-positive" class="review-form__label review-form__label--impression">Скорее положительное</label>
           </li>
           <li class="review-form__item review-form__item--impression">
-            <input type="radio" name="impression" value="negative" id="input-negative" class="review-form__input review-form__input--impresion">
+            <input type="radio" name="impression" value="negative" id="input-negative" class="review-form__input review-form__input--impression">
             <label for="input-negative" class="review-form__label review-form__label--impression">Скорее отрицательное</label>
           </li>
           <li class="review-form__item review-form__item--impression">
-            <input type="radio" name="impression" value="difficult" id="input-difficult" class="review-form__input review-form__input--impresion">
+            <input type="radio" name="impression" value="difficult" id="input-difficult" class="review-form__input review-form__input--impression">
             <label for="input-difficult" class="review-form__label review-form__label--impression">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review-form__fieldset--attraction">
+      <fieldset class="review-form__fieldset review-form__fieldset--attraction">
         <legend class="review-form__legend">Посещенные достопримечательности:</legend>
         <ul class="review-form__list">
           <li class="review-form__item review-form__item--attraction">
@@ -106,7 +107,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="review-form__fieldset--emotions">
+      <fieldset class="review-form__fieldset review-form__fieldset--emotions">
         <legend class="review-form__legend">Опишите свои эмоции:</legend>
         <textarea name="textarea-emotions" placeholder="Опишите подробно все свои восторги" class="review-form__textarea"></textarea>
       </fieldset>

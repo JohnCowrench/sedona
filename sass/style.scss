@@ -1,0 +1,47 @@
+@import "normalize";
+@import "fonts";
+@import "colors";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-header";
+@import "blocks/general-nav";
+@import "blocks/site-list";
+@import "blocks/page-footer";
+@import "blocks/powered_by";
+@import "blocks/social";
+@import "blocks/page-main";
+@import "blocks/welcome";
+@import "blocks/sedona-description";
+@import "blocks/reason";
+@import "blocks/advantages";
+@import "blocks/search-hostel";
+@import "blocks/button";
+@import "blocks/map";
+@import "blocks/main-header";
+@import "blocks/page-title";
+@import "blocks/photo";
+@import "blocks/photo-item";
+@import "blocks/video";
+@import "blocks/video-player";
+@import "blocks/form-description";
+@import "blocks/review";
+@import "blocks/review-form";
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
