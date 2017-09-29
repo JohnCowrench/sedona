@@ -1,0 +1,67 @@
+.review-form__fieldset {
+  border: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.review-form__legend {
+  font-size: 18px;
+  font-height: 26px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+.review-form__list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.review-form__label {
+  font-height: 26px;
+
+  &--impression {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+  }
+
+  &--attraction {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.review-form__input {
+  font: inherit;
+  font-size: 18px;
+  font-height: 26px;
+  font-weight: 700;
+  color: black;
+  text-transform: none;
+
+  &::placeholder {
+    font-size: 18px;
+    font-height: 26px;
+    font-weight: 700;
+    color: black;
+  }
+}
+
+.review-form__textarea {
+  font-size: 18px;
+  font-height: 26px;
+  font-weight: 700;
+  color: black;
+
+  &::placeholder {
+    font-size: 18px;
+    font-height: 26px;
+    font-weight: 700;
+    color: black;
+  }
+}

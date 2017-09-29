@@ -1,0 +1,72 @@
+.reason__title {
+  font-size: 14px;
+  font-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: $color-text;
+}
+
+.reason__part {
+  color: white;
+
+  background-color: $blue;
+
+  &--first {
+    background-image: url("../../img/bg-triangle.svg");
+    background-position: center -22px;
+    background-repeat: no-repeat;
+  }
+}
+
+.reason__subtitle {
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-height: 26px;
+  font-weight: 700;
+  text-align: center;
+
+  &--black {
+    color: black;
+  }
+}
+
+.reason__number {
+  padding: 0;
+  margin: 0;
+
+  font-height: 21px;
+  text-align: center;
+}
+
+.reason__text {
+  font-height: 21px;
+  text-align: center;
+}
+
+.reason__img {
+  height: 260px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--first {
+    background-image: url("../../img/main-city-mobile@1x.jpg");
+  }
+
+  &--second {
+    background-image: url("../../img/main-bridge-mobile@1x.jpg");
+  }
+}
+
+.reason__other {
+  background-color: $lightgray;
+}
+
+.reason__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
