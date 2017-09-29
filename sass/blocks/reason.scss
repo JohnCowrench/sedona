@@ -16,7 +16,7 @@
   background-color: $blue;
 
   &--first {
-    background-image: url(../../img/bg-triangle.svg);
+    background-image: url("../../img/bg-triangle.svg");
     background-position: center -22px;
     background-repeat: no-repeat;
   }
@@ -33,7 +33,6 @@
   font-size: 18px;
   font-height: 26px;
   font-weight: 700;
-  text-align: center;
   text-align: center;
 
   &--black {
@@ -65,7 +64,7 @@
   }
 
   &--second {
-    background-image: url(../../img/main-bridge-mobile@1x.jpg);
+    background-image: url("../../img/main-bridge-mobile@1x.jpg");
   }
 }
 
@@ -74,7 +73,7 @@
 }
 
 .reason__other {
-  background-color: $lightgray
+  background-color: $lightgray;
 }
 
 .reason__list {
