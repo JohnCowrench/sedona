@@ -25,14 +25,14 @@
       </header>
 
       <main class="page-main">
-        <header class="page-main__main-heder main-header">
-
+        <header class="page-main__main-header main-header">
+          <div class="main-header__text"></div>
         </header>
 
         <h1 class="page-main__page-title page-title">Оставьте свой отзыв</h1>
 
         <p class="page-main__form-description form-description">
-          Помогите нашим отелям стать лучше! <br>
+          Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о <br>
           посещенных вами - <br>
           достопримечательностях
@@ -44,7 +44,7 @@
               <legend class="review-form__legend">Представьтесь:</legend>
               <ul class="review-form__list">
                 <li class="review-form__item">
-                  <label for="input-name" class="review-form__label review-form__label--name">Имя<sup class="review-form__sup">*</sup>:</label>
+                  <label for="input-name" class="review-form__label review-form__label--name">Имя*:</label>
                   <input type="text" name="name" id="input-name" class="review-form__input review-form__input--name" placeholder="Петр">
                 </li>
                 <li class="review-form__item">
@@ -61,11 +61,11 @@
               <legend class="review-form__legend">Контактная информация:</legend>
               <ul class="review-form__list">
                 <li class="review-form__item">
-                  <label for="input-tel" class="review-form__label review-form__label--contact">Контактный телефон<sup class="review-form__sup">*</sup>:</label>
+                  <label for="input-tel" class="review-form__label review-form__label--contact">Контактный телефон*:</label>
                   <input type="tel" name="tel" id="input-tel" class="review-form__input review-form__input--contact" placeholder="Введите телефон">
                 </li>
                 <li class="review-form__item">
-                  <label for="input-email" class="review-form__label review-form__label--contact">Электронная почта<sup class="review-form__sup">*</sup>:</label>
+                  <label for="input-email" class="review-form__label review-form__label--contact">Электронная почта*:</label>
                   <input type="email" name="email" id="input-email" class="review-form__input review-form__input--contact" placeholder="Введите e-mail">
                 </li>
               </ul>
@@ -113,6 +113,7 @@
               <textarea name="textarea-emotions" placeholder="Опишите подробно все свои восторги" class="review-form__textarea"></textarea>
             </fieldset>
             <button type="submit" class="button review-form__button">Отправить отзыв</button>
+            <p class="review-form__required-text">* - Обязательные поля</p>
           </form>
         </section>
       </main>

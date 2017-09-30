@@ -48,6 +48,14 @@
   min-height: 389px;
 }
 
+.page-main__form-description {
+  min-height: 133px;
+}
+
+.page-main__review {
+  min-height: 1658px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__welcome {
     min-height: 518px;
@@ -80,6 +88,14 @@
   .page-main__video {
     min-height: 634px;
   }
+
+  .page-main__form-description {
+    min-height: 100px;
+  }
+
+  .page-main__review {
+    min-height: 1425px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -105,5 +121,9 @@
 
   .page-main__video {
     min-height: 621px;
+  }
+
+  .page-main__review {
+    min-height: 1232px;
   }
 }
