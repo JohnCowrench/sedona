@@ -1,7 +1,44 @@
+.page-main__welcome {
+  min-height: 389px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__sedona-description {
+  min-height: 130px;
+}
+
+.page-main__reason {
+  min-height: 1932px;
+}
+
+.page-main__search-hostel {
+  min-height: 287px;
+}
+
+.page-main__map {
+  min-height: 350px;
+}
+
 .page-main__text-lure {
   font-size: 18px;
   font-height: 26px;
   font-weight: 700;
   color: black;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__welcome {
+    min-height: 518px;
+  }
+
+  .page-main__reason {
+    min-height: 1174px;
+  }
+
+  .page-main__search-hostel {
+    min-height: 318px;
+  }
 }

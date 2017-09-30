@@ -4,6 +4,10 @@
   font-weight: 400;
   text-align: center;
   color: $color-text;
+
+  min-height: 94px;
+
+  margin: auto 35px;
 }
 
 .reason__part {
@@ -11,21 +15,33 @@
 
   background-color: $blue;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  min-height: 451px;
+
+  &--first {
+    min-height: 490px;
+  }
+}
+
+.reason__part-column {
   &--first {
     background-image: url("../../img/bg-triangle.svg");
-    background-position: center -22px;
+    background-position: auto;
     background-repeat: no-repeat;
   }
 }
 
 .reason__subtitle {
-  padding: 0;
-  margin: 0;
-
   font-size: 18px;
   font-height: 26px;
   font-weight: 700;
   text-align: center;
+
+  padding: 0;
+  margin: 0;
 
   &--black {
     color: black;
@@ -33,11 +49,11 @@
 }
 
 .reason__number {
-  padding: 0;
-  margin: 0;
-
   font-height: 21px;
   text-align: center;
+
+  padding: 0;
+  margin: 0;
 }
 
 .reason__text {
@@ -46,10 +62,10 @@
 }
 
 .reason__img {
-  height: 260px;
-
   background-position: center;
   background-repeat: no-repeat;
+
+  height: 260px;
 
   &--first {
     background-image: url("../../img/main-city-mobile@1x.jpg");
@@ -60,13 +76,64 @@
   }
 }
 
+.reason__advantages {
+  min-height: 416px;
+}
+
 .reason__other {
   background-color: $lightgray;
+
+  min-height: 503px;
 }
 
 .reason__list {
+  display: flex;
+  flex-direction: column;
+
   list-style: none;
 
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reason__title {
+    min-height: 76px;
+  }
+
+  .reason__part {
+    min-height: 256px;
+
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .reason__part-column {
+    width: 33%;
+
+    &--first {
+      background-image: none;
+    }
+
+    &--second {
+      order: 2;
+    }
+  }
+
+  .reason__img {
+    flex-grow: 1;
+    height: 256px;
+  }
+
+  .reason__advantages {
+    min-height: 330px;
+  }
+
+  .reason__other {
+    min-height: 256px;
+  }
+
+  .reason__list {
+    flex-direction: row;
+  }
 }

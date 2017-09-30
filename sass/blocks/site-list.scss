@@ -8,10 +8,10 @@
   list-style: none;
 }
 
-.site-list__item {
-  background-color: $blue;
-}
-
 .site-list__link {
+  display: inline-block;
   color: white;
+  text-align: center;
+
+  background-color: $blue;
 }

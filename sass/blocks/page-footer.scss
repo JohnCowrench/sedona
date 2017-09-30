@@ -1,5 +1,8 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
 
+  min-height: 243px;
 
   background-color: $color-footer;
 }
@@ -9,4 +12,12 @@
   font-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+
+    min-height: 120px;
+  }
 }

@@ -1,4 +1,7 @@
 .general-nav__toggle {
+  /* временно */
+  display: none;
+
   font-size: 0;
 
   border: 0;
@@ -7,6 +10,14 @@
 }
 
 .general-nav__site-list {
+  display: flex;
+
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .general-nav__toggle {
+    display: none;
+  }
 }
