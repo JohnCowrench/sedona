@@ -1,6 +1,6 @@
 .reason__title {
   font-size: 14px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 400;
   text-align: center;
   color: $color-text;
@@ -36,7 +36,7 @@
 
 .reason__subtitle {
   font-size: 18px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   text-align: center;
 
@@ -49,7 +49,7 @@
 }
 
 .reason__number {
-  font-height: 21px;
+  line-height: 21px;
   text-align: center;
 
   padding: 0;
@@ -57,7 +57,7 @@
 }
 
 .reason__text {
-  font-height: 21px;
+  line-height: 21px;
   text-align: center;
 }
 

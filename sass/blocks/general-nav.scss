@@ -11,6 +11,7 @@
 
 .general-nav__site-list {
   display: flex;
+  flex-direction: column;
 
   margin: 0;
   padding: 0;
@@ -19,5 +20,9 @@
 @media (min-width: $tablet-width) {
   .general-nav__toggle {
     display: none;
+  }
+
+  .general-nav__site-list {
+    flex-direction: row;
   }
 }
