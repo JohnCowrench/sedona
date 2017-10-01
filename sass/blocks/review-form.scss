@@ -1,4 +1,13 @@
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .review-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
   border: none;
 
   padding: 0;
@@ -46,7 +55,7 @@
 
   &::placeholder {
     font-size: 18px;
-    font-height: 26px;
+    line-height: 26px;
     font-weight: 700;
     color: black;
   }
@@ -54,14 +63,43 @@
 
 .review-form__textarea {
   font-size: 18px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   color: black;
 
   &::placeholder {
     font-size: 18px;
-    font-height: 26px;
+    line-height: 26px;
     font-weight: 700;
     color: black;
+  }
+}
+
+.review-form__required-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .review-form__fieldset {
+    &--impression {
+      order: -3;
+
+      width: 50%;
+    }
+
+    &--name {
+      order: -2;
+
+      width: 50%;
+    }
+  }
+
+  .review-form__required-text {
+    display: block;
   }
 }

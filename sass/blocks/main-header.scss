@@ -1,6 +1,6 @@
 .main-header {
   background-color: $color-welcome;
-  background-image: url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: center bottom, center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -9,7 +9,8 @@
 .main-header__text {
   height: 158px;
 
-  background-image: url("../../img/text-sedona.svg");
+  background-image: url("../img/text-sedona.svg");
   background-position: center;
+  background-size: 100%;
   background-repeat: no-repeat;
 }

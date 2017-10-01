@@ -1,12 +1,23 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
 
+  min-height: 243px;
 
   background-color: $color-footer;
 }
 
 .page-footer__hashtag {
   font-size: 21px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+
+    min-height: 120px;
+  }
 }
