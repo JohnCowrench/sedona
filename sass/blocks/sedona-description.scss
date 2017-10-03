@@ -8,5 +8,29 @@
   color: black;
   text-align: center;
 
-  margin: auto 32px;
+  padding-top: 43px;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .sedona-description__title {
+    font-size: 21px;
+
+    padding-top: 53px;
+    padding-right: 153px;
+    padding-bottom: 10px;
+    padding-left: 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-description__title {
+    width: 450px;
+
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+  }
 }

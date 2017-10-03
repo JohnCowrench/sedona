@@ -1,12 +1,19 @@
+.general-nav {
+  position: relative;
+}
+
 .general-nav__toggle {
-  /* временно */
-  display: none;
+  position: absolute;
+  right: 0;
 
   font-size: 0;
 
   border: 0;
 
-  background-color: transparent;
+  background-color: red;
+
+  width: 63px;
+  height: 56px;
 }
 
 .general-nav__site-list {

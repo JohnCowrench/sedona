@@ -1,4 +1,26 @@
+.powered-by {
+  position: relative;
+  min-width: 140px;
+
+  padding-left: 5px;
+}
+
 .powered-by__text {
   line-height: 26px;
   color: black;
+}
+
+.powered-by__link {
+  position: absolute;
+
+  top: 9px;
+  right: 10px;
+
+  display: inline-block;
+  font-size: 0;
+
+  width: 27px;
+  height: 34px;
+
+  background-image: url("../../img/logo-htmlacademy.svg");
 }

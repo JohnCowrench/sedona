@@ -1,4 +1,6 @@
 .social__list {
+  display: flex;
+
   list-style: none;
 
   margin: 0;
@@ -6,5 +8,37 @@
 }
 
 .social__item {
+  margin-right: 6px;
+}
+
+.social__link {
+  font-size: 0;
   background-color: $blue;
+  padding: 24px 23px;
+
+  &--twitter {
+    background-image: url(../../img/icon-twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--facebook {
+    background-image: url(../../img/icon-facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--youtube {
+    background-image: url(../../img/icon-youtube.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
 }

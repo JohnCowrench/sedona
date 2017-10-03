@@ -1,28 +1,16 @@
-.page-main__welcome {
-  min-height: 389px;
+.page-main__main-header {
+  min-height: 158px;
 
-  display: flex;
-  flex-direction: column;
-}
+  &--index {
+    min-height: 389px;
 
-.page-main__sedona-description {
-  min-height: 130px;
-}
-
-.page-main__reason {
-  min-height: 1932px;
-}
-
-.page-main__search-hostel {
-  min-height: 287px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .page-main__map {
   min-height: 350px;
-}
-
-.page-main__main-header {
-  min-height: 158px;
 }
 
 .page-main__page-title {
@@ -57,20 +45,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__welcome {
-    min-height: 518px;
-  }
-
-  .page-main__reason {
-    min-height: 1174px;
-  }
-
-  .page-main__search-hostel {
-    min-height: 318px;
-  }
-
   .page-main__main-header {
     min-height: 290px;
+  }
+
+  .page-main__main-header--index {
+    min-height: 518px;
   }
 
   .page-main__page-title {
@@ -99,12 +79,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__search-hostel {
-    min-height: 331px;
-  }
-
   .page-main__main-header {
     min-height: 301px;
+
+    &--index {
+      min-height: 518px;
+    }
   }
 
   .page-main__page-title {

@@ -13,77 +13,83 @@
           <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны" class="page-header__logo-img">
         </a>
         <nav class="page-header__general-nav general-nav">
-          <button class="general-nav__toggle general-nav__toggle--open" type="button">Открыть меню</button>
+          <button class="general-nav__toggle general-nav__toggle--closed" type="button">Открыть меню</button>
           <ul class="general-nav__site-list site-list">
-            <li class="site-list__item"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
             <li class="site-list__item"><a href="photo.html" class="site-list__link">Фото и видео</a></li>
             <li class="site-list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="http://htmlacademy.com" class="site-list__link">Html Academy</a></li>
+            <li class="site-list__item"><a href="http://htmlacademy.com" class="site-list__link site-list__link--shadow">Html Academy</a></li>
           </ul>
-          <button class="general-nav__toggle general-nav__toggle--exit" type="button">Закрыть меню</button>
+          <button class="general-nav__toggle general-nav__toggle--open" type="button">Закрыть меню</button>
         </nav>
       </header>
 
       <main class="page-main">
-        <section class="page-main__welcome welcome">
+        <section class="page-main__main-header page-main__main-header--index main-header main-header--index">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <div class="welcome__text"></div>
+          <div class="main-header__text main-header__text--index"></div>
         </section>
 
         <section class="page-main__sedona-description sedona-description">
-          <b class="sedona-description__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+          <b class="sedona-description__title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
         </section>
 
         <section class="page-main__reason reason">
           <h2 class="reason__title">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</h2>
-          <div class="reason__part reason__part--first">
-            <div class="reason__part-column reason__part-column--first">
+          <div class="reason__part">
+            <div class="reason__part-column">
               <h3 class="reason__subtitle">Настоящий городок</h3>
               <p class="reason__number">&#151; №1 &#151;</p>
-              <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="reason__text reason__text--image">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reason__img reason__img--first"></div>
           </div>
           <div class="reason__advantages advantages">
             <ul class="advantages__list">
-              <li class="advantages__item">
-                <b class="advantages__title">Жилье</b>
-                <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <li class="advantages__item advantages__item--house">
+                <b class="advantages__title advantages__title--house">Жилье</b>
+                <p class="advantages__text advantages__text--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item">
-                <b class="advantages__title">Сувениры</b>
-                <p class="advantages__text">Не только китайского, но и местного производства!</p>
+              <li class="advantages__item advantages__item--gift">
+                <b class="advantages__title advantages__title--gift">Сувениры</b>
+                <p class="advantages__text advantages__text--gift">Не только китайского,<br class="visually-space visually-space--desktop"> но и местного производства!</p>
               </li>
-              <li class="advantages__item">
-                <b class="advantages__title">Еда</b>
-                <p class="advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li class="advantages__item advantages__item--burger">
+                <b class="advantages__title advantages__title--burger">Еда</b>
+                <p class="advantages__text advantages__text--burger">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </div>
-          <div class="reason__part reason__part--second">
+          <div class="reason__part">
             <div class="reason__part-column reason__part-column--second">
-              <h3 class="reason__subtitle">Там есть Мост Дьявола</h3>
+              <h3 class="reason__subtitle">Там есть<br class="visually-space visually-space--tablet"> Мост Дьявола</h3>
               <p class="reason__number">&#151; №2 &#151;</p>
-              <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reason__text reason__text--image reason__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reason__img reason__img--second"></div>
           </div>
           <div class="reason__other">
             <ul class="reason__list">
               <li class="reason__item">
-                <h3 class="reason__subtitle reason__subtitle--black">Небольшая площадь</h3>
-                <p class="reason__number reason__number">&#151; №3 &#151;</p>
-                <p class="reason__text reason-text">Все интересные места находятся очень близко</p>
+                <div class="reason__item-wrapper reason__item-wrapper--3">
+                  <h3 class="reason__subtitle">Небольшая площадь</h3>
+                  <p class="reason__number">&#151; №3 &#151;</p>
+                  <p class="reason__text">Все интересные места находятся очень близко</p>
+                </div>
               </li>
               <li class="reason__item">
-                <h3 class="reason__subtitle reason__subtitle--black">Красивая дорога</h3>
-                <p class="reason__number reason__number">&#151; №4 &#151;</p>
-                <p class="reason__text reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <div class="reason__item-wrapper reason__item-wrapper--4">
+                  <h3 class="reason__subtitle">Красивая дорога</h3>
+                  <p class="reason__number">&#151; №4 &#151;</p>
+                  <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
               </li>
               <li class="reason__item">
-                <h3 class="reason__subtitle reason__subtitle--black">Мало туристов</h3>
-                <p class="reason__number reason__number">&#151; №5 &#151;</p>
-                <p class="reason__text reason-text">Большинство едет а Гранд каньон и толпится там</p>
+                <div class="reason__item-wrapper reason__item-wrapper--5">
+                  <h3 class="reason__subtitle">Мало туристов</h3>
+                  <p class="reason__number">&#151; №5 &#151;</p>
+                  <p class="reason__text">Большинство едет в Гранд каньон и толпится там</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -91,7 +97,7 @@
 
         <section class="page-main__search-hostel search-hostel">
           <b class="search-hostel__title">Зантересовались?</b>
-          <p class="search-hostel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search-hostel__text">Укажите предполагаемые даты поездки,<br class="visually-space visually-space--tablet"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a src="#" class="button search-hostel__button">Найти гостиницу</a>
         </section>
 
@@ -106,7 +112,7 @@
           <ul class="social__list">
             <li class="social__item"><a href="twitter.com" class="social__link social__link--twitter">Мы в Твиттере</a></li>
             <li class="social__item"><a href="facebook.com" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
-            <li class="social__item"><a href="youtube.com" class="social__link social__ling--youtube">Мы в Ютубе</a></li>
+            <li class="social__item"><a href="youtube.com" class="social__link social__link--youtube">Мы в Ютубе</a></li>
           </ul>
         </div>
 

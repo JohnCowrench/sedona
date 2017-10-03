@@ -7,4 +7,22 @@
   vertical-align: middle;
 
   background-color: $blue;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 18px;
+  padding-bottom: 16px;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+  }
 }

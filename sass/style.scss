@@ -2,7 +2,8 @@
 @import "fonts";
 @import "variables";
 @import "scaffolding";
-@import "blocks/visually-hidden.scss";
+@import "blocks/visually-hidden";
+@import "blocks/visually-space";
 @import "blocks/page-wrapper";
 @import "blocks/page-header";
 @import "blocks/general-nav";
@@ -11,7 +12,6 @@
 @import "blocks/powered_by";
 @import "blocks/social";
 @import "blocks/page-main";
-@import "blocks/welcome";
 @import "blocks/sedona-description";
 @import "blocks/reason";
 @import "blocks/advantages";
