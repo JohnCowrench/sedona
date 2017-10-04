@@ -2,7 +2,7 @@
   background-color: $color-welcome;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: center bottom, center bottom;
-  background-size: 100%;
+  background-size: cover, auto;
   background-repeat: no-repeat;
 
   &--index {
@@ -13,12 +13,14 @@
 }
 
 .main-header__text {
-  min-height: 158px;
+  min-height: 39px;
 
   background-image: url("../img/text-sedona.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  margin-top: 53px;
 
   &--index {
     min-height: 214px;
@@ -31,6 +33,10 @@
 
 @media (min-width: $tablet-width) {
   .main-header__text {
+    min-height: 78px;
+
+    margin-top: 95px;
+
     &--index {
       min-height: 350px;
     }

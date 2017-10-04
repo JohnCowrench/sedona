@@ -1,7 +1,166 @@
+.video-player {
+  position: relative;
+
+  width: 320px;
+}
+
 .video-player__img {
   height: 201px;
 
   background-image: url("../img/video-mobile@1x.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.video-player__range {
+  position: absolute;
+
+  top: 156px;
+  left: 20px;
+
+  height: 45px;
+  width: 280px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 22px;
+    left: 22px;
+
+    height: 3px;
+    width: 235px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 19px;
+    left: 58px;
+
+    height: 9px;
+    width: 9px;
+
+    background-color: white;
+
+    border-radius: 50%;
+  }
+}
+
+.video-player__control {
+  position: relative;
+
+  left: 20px;
+
+  width: 280px;
+  height: 66px;
+
+  background-color: $color-input;
+}
+
+.video-player__replay {
+  position: absolute;
+
+  top: 22px;
+  left: 25px;
+
+  width: 16px;
+  height: 20px;
+
+  background-image: url("../img/icon-video-replay.svg");
+}
+
+.video-player__subtitles {
+  position: absolute;
+
+  top: 22px;
+  left: 174px;
+
+  width: 32px;
+  height: 20px;
+
+  background-image: url("../img/icon-video-subtitles.svg");
+}
+
+.video-player__fullscreen {
+  position: absolute;
+
+  top: 22px;
+  left: 237px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/icon-video-fullscreen.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .video-player {
+    width: 648px;
+  }
+
+  .video-player__img {
+    height: 499px;
+  }
+
+  .video-player__range {
+    top: 406px;
+    left: 0;
+
+    height: 93px;
+    width: 100%;
+
+    &::before {
+      width: 389px;
+
+      top: 44px;
+      left: 93px;
+    }
+
+    &::after {
+      top: 41px;
+      left: 206px;
+    }
+  }
+
+  .video-player__control {
+    position: absolute;
+
+    top: 406px;
+    left: 0;
+
+    height: 93px;
+    width: 100%;
+
+    background-color: transparent;
+  }
+
+  .video-player__replay {
+    top: 35px;
+    left: 35px;
+  }
+
+  .video-player__subtitles {
+    top: 35px;
+    left: 524px;
+  }
+
+  .video-player__fullscreen {
+    top: 35px;
+    left: 587px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-player {
+    width: 800px;
+  }
 }
