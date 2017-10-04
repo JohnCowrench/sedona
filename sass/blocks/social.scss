@@ -12,9 +12,13 @@
 }
 
 .social__link {
+  display: inline-block;
+
   font-size: 0;
   background-color: $blue;
-  padding: 24px 23px;
+
+  width: 48px;
+  height: 46px;
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
