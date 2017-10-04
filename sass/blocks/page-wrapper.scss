@@ -1,8 +1,5 @@
 .page-wrapper {
-  width: 320px;
   margin: 0 auto;
-
-  box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.1);
 
   background-color: white;
 }
@@ -10,6 +7,8 @@
 @media (min-width: $tablet-width) {
   .page-wrapper {
     width: $tablet-width;
+
+    box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.1);
   }
 }
 

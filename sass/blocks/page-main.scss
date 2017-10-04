@@ -33,11 +33,12 @@
 }
 
 .page-main__form-description {
-  min-height: 133px;
+  margin-top: 26px;
+  margin-bottom: 16px;
 }
 
 .page-main__review {
-  min-height: 1658px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,11 +63,11 @@
   }
 
   .page-main__form-description {
-    min-height: 100px;
+    margin-top: 29px;
   }
 
   .page-main__review {
-    min-height: 1425px;
+    margin-bottom: 60px;
   }
 }
 
@@ -87,7 +88,11 @@
     margin-top: 72px;
   }
 
+  .page-main__form-description {
+    margin-bottom: 2px;
+  }
+
   .page-main__review {
-    min-height: 1232px;
+    margin-bottom: 65px;
   }
 }
