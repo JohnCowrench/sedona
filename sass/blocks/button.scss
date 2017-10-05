@@ -6,5 +6,25 @@
   text-align: center;
   vertical-align: middle;
 
+  border: none;
+
   background-color: $blue;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 18px;
+  padding-bottom: 16px;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+  }
 }

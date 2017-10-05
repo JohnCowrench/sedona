@@ -17,3 +17,9 @@ img {
 a {
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  body {
+    background-color: $color-input;
+  }
+}

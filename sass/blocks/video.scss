@@ -1,9 +1,38 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .video__title {
   text-align: center;
 
-  min-height: 122px;
+  padding: 0 40px;
 }
 
 .video__video-player {
-  min-height: 267px;
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__title {
+    padding: 0 170px;
+  }
+
+  .video__video-player {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__title {
+    padding: 0 390px;
+  }
+
+  .video__video-player {
+    margin-top: 58px;
+    margin-bottom: 85px;
+  }
 }

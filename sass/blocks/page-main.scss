@@ -1,129 +1,98 @@
-.page-main__welcome {
-  min-height: 389px;
+.page-main__main-header {
+  min-height: 158px;
 
   display: flex;
   flex-direction: column;
-}
 
-.page-main__sedona-description {
-  min-height: 130px;
-}
-
-.page-main__reason {
-  min-height: 1932px;
-}
-
-.page-main__search-hostel {
-  min-height: 287px;
+  &--index {
+    min-height: 389px;
+  }
 }
 
 .page-main__map {
   min-height: 350px;
 }
 
-.page-main__main-header {
-  min-height: 158px;
-}
-
 .page-main__page-title {
-  min-height: 70px;
-}
-
-.page-main__photo {
-  min-height: 1780px;
+  margin-top: 40px;
+  margin-bottom: 13px;
 }
 
 .page-main__text-lure {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: black;
   text-align: center;
 
-  min-height: 70px;
-}
-
-.page-main__video {
-  min-height: 389px;
+  margin-top: 35px;
+  margin-bottom: 10px;
 }
 
 .page-main__form-description {
-  min-height: 133px;
+  margin-top: 26px;
+  margin-bottom: 16px;
 }
 
 .page-main__review {
-  min-height: 1658px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__welcome {
-    min-height: 518px;
-  }
-
-  .page-main__reason {
-    min-height: 1174px;
-  }
-
-  .page-main__search-hostel {
-    min-height: 318px;
-  }
-
   .page-main__main-header {
     min-height: 290px;
   }
 
-  .page-main__page-title {
-    min-height: 129px;
+  .page-main__main-header--index {
+    min-height: 518px;
   }
 
-  .page-main__photo {
-    min-height: 1294px;
+  .page-main__page-title {
+    margin-top: 77px;
+    margin-bottom: 15px;
   }
 
   .page-main__text-lure {
-    min-height: 110px;
-  }
+    font-size: 30px;
 
-  .page-main__video {
-    min-height: 634px;
+    margin-top: 62px;
+    margin-bottom: 16px;
   }
 
   .page-main__form-description {
-    min-height: 100px;
+    margin-top: 29px;
   }
 
   .page-main__review {
-    min-height: 1425px;
+    margin-bottom: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__search-hostel {
-    min-height: 331px;
-  }
-
   .page-main__main-header {
     min-height: 301px;
+
+    &--index {
+      min-height: 518px;
+    }
   }
 
   .page-main__page-title {
-    min-height: 160px;
-  }
-
-  .page-main__photo {
-    min-height: 794px;
+    margin-top: 113px;
   }
 
   .page-main__text-lure {
-    min-height: 125px;
+    margin-top: 72px;
   }
 
-  .page-main__video {
-    min-height: 621px;
+  .page-main__form-description {
+    margin-bottom: 2px;
   }
 
   .page-main__review {
-    min-height: 1232px;
+    margin-bottom: 65px;
   }
 }
