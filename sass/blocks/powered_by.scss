@@ -21,6 +21,14 @@
 
   width: 27px;
   height: 34px;
+}
 
-  background-image: url("../img/logo-htmlacademy.svg");
+.powered-by__icon {
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -70,20 +70,14 @@
   }
 }
 
+.reason__img-wrapper {
+  background-color: $color-map;
+}
+
 .reason__img {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: block;
 
-  height: 260px;
-
-  &--first {
-    background-image: url("../img/main-city-mobile@1x.jpg");
-  }
-
-  &--second {
-    background-image: url("../img/main-bridge-mobile@1x.jpg");
-  }
+  margin: auto;
 }
 
 .reason__other {
@@ -150,8 +144,7 @@
   }
 
   .reason__img {
-    flex-grow: 1;
-    height: 256px;
+    width: 100%;
   }
 
   .reason__list {
@@ -198,6 +191,12 @@
     &--second {
       width: 230px;
     }
+  }
+
+  .reason__img {
+    height: 256px;
+
+    object-fit: cover;
   }
 
   .reason__item {

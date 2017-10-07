@@ -5,6 +5,8 @@
 }
 
 .page-header__logo {
+  z-index: 2;
+
   order: 2;
 
   height: 56px;
@@ -27,5 +29,16 @@
     order: 0;
 
     position: absolute;
+  }
+
+  .page-header__logo-img {
+    height: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-img {
+    height: 96px;
+    width: 188px;
   }
 }

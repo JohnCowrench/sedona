@@ -32,24 +32,20 @@
 
   margin-top: 10px;
   margin-left: 35px;
+}
 
-  &::before {
-    content: "";
-    display: block;
+.photo-item__icon-like {
+  position: absolute;
 
-    position: absolute;
+  left: -35px;
+  top: -3px;
 
-    left: -35px;
-    top: -3px;
+  width: 22x;
+  height: 20px;
 
-    width: 23px;
-    height: 21px;
+  opacity: 0.3;
 
-    background-image: url("../img/icon-like.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -128,5 +124,11 @@
       top: 22px;
       left: 1115px;
     }
+  }
+
+  .photo-item__icon-like {
+    opacity: 1;
+
+    fill: white;
   }
 }

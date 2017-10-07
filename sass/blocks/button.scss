@@ -22,9 +22,11 @@
 
   &:active {
     background-color: $blue-down;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:disabled {
     background-color: $disabled;
+    color: #f8f8f8;
   }
 }

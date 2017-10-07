@@ -10,7 +10,11 @@
 
       <header class="page-header">
         <a href="index.html" class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны" class="page-header__logo-img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седоны">
+          </picture>
         </a>
         <nav class="page-header__general-nav general-nav">
           <button class="general-nav__toggle general-nav__toggle--closed" type="button">Открыть меню</button>
@@ -18,7 +22,7 @@
             <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--active">Фото и видео</a></li>
             <li class="site-list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="http://htmlacademy.com" class="site-list__link">Html Academy</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">Html Academy</a></li>
           </ul>
           <button class="general-nav__toggle general-nav__toggle--open" type="button">Закрыть меню</button>
         </nav>
@@ -36,42 +40,78 @@
           <ul class="photo__list">
             <li class="photo__item photo-item photo-item--general">
               <a href="#" class="photo-item__link">
-                <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография Неродные Просторы" class="photo-item__img photo-item__img--general">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="photo-item__img photo-item__img--general" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"  alt="Фотография Неродные Просторы">
+                </picture>
               </a>
               <div class="photo-item__menu-wrapper">
                 <b class="photo-item__name">Неродные Просторы</b>
                 <p class="photo-item__author">Автор фото: Борис</p>
-                <p class="photo-item__like photo-item__like--general">1350</p>
+                <p class="photo-item__like photo-item__like--general">
+                  <svg class="photo-item__icon-like" width="22px" height="20px">
+                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  </svg>
+                  1350
+                </p>
               </div>
             </li>
             <li class="photo__item photo-item">
               <a href="#" class="photo-item__link">
-                <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография Местная Растительность" class="photo-item__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="photo-item__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография Местная Растительность">
+                </picture>
               </a>
               <div class="photo-item__menu-wrapper">
                 <b class="photo-item__name">Местная Растительность</b>
                 <p class="photo-item__author">Автор фото: Сергей</p>
-                <p class="photo-item__like">143</p>
+                <p class="photo-item__like">
+                  <svg class="photo-item__icon-like" width="22px" height="20px">
+                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  </svg>
+                  143
+                </p>
               </div>
             </li>
             <li class="photo__item photo-item">
               <a href="#" class="photo-item__link">
-                <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография Дорога На Север" class="photo-item__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="photo-item__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография Дорога На Север">
+                </picture>
               </a>
               <div class="photo-item__menu-wrapper">
                 <b class="photo-item__name">Дорога На Север</b>
                 <p class="photo-item__author">Автор фото: Петр</p>
-                <p class="photo-item__like">96</p>
+                <p class="photo-item__like">
+                  <svg class="photo-item__icon-like" width="22px" height="20px">
+                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  </svg>
+                  96
+                </p>
               </div>
             </li>
             <li class="photo__item photo-item">
               <a href="#" class="photo-item__link">
-                <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография Мост Дьявола" class="photo-item__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo-item__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фотография Мост Дьявола">
+                </picture>
               </a>
               <div class="photo-item__menu-wrapper">
                 <b class="photo-item__name">Мост Дьявола</b>
                 <p class="photo-item__author">Автор фото: Антон</p>
-                <p class="photo-item__like">254</p>
+                <p class="photo-item__like">
+                  <svg class="photo-item__icon-like" width="22px" height="20px">
+                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  </svg>
+                  254
+                </p>
               </div>
             </li>
           </ul>
@@ -85,9 +125,15 @@
             <div class="video-player__img"></div>
             <div class="video-player__range"></div>
             <div class="video-player__control">
-              <div class="video-player__replay"></div>
-              <div class="video-player__subtitles"></div>
-              <div class="video-player__fullscreen"></div>
+              <svg class="video-player__icon video-player__icon--replay" width="16px" height="20px">
+                <use xlink:href="img/svg-changing.svg#icon-replay"/>
+              </svg>
+              <svg class="video-player__icon video-player__icon--subtitles" width="32px" height="20px">
+                <use xlink:href="img/svg-changing.svg#icon-subtitles"/>
+              </svg>
+              <svg class="video-player__icon video-player__icon--fullscreen" width="20px" height="20px">
+                <use xlink:href="img/svg-changing.svg#icon-fullscreen"/>
+              </svg>
             </div>
           </div>
         </section>
@@ -98,15 +144,42 @@
 
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item"><a href="twitter.com" class="social__link social__link--twitter">Мы в Твиттере</a></li>
-            <li class="social__item"><a href="facebook.com" class="social__link social__link--facebook">Мы в Фейсбуке</a></li>
-            <li class="social__item"><a href="youtube.com" class="social__link social__link--youtube">Мы в Ютубе</a></li>
+            <li class="social__item">
+              <a href="twitter.com" class="social__link social__link--twitter">
+                Мы в Твиттере
+                <svg class="social__icon social__icon--twitter" width="17.5px" height="14.663px">
+                  <use xlink:href="img/svg-changing.svg#icon-twitter"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="facebook.com" class="social__link social__link--facebook">
+                Мы в Фейсбуке
+                <svg class="social__icon social__icon--facebook" width="8.672px" height="18.944px">
+                  <use xlink:href="img/svg-changing.svg#icon-facebook"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="youtube.com" class="social__link social__link--youtube">
+                Мы в Ютубе
+                <svg class="social__icon social__icon--youtube" width="19.979px" height="14.015px">
+                  <use xlink:href="img/svg-changing.svg#icon-youtube"/>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
 
         <div class="page-footer__powered-by powered-by">
           <p class="powered-by__text">
-            Разработано <a href="http://htmlacademy.ru" class="powered-by__link">Html Academy</a>
+            Разработано
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="powered-by__link">
+              Html Academy
+              <svg class="powered-by__icon" width="26.943px" height="34.09px">
+                <use xlink:href="img/svg-changing.svg#icon-htmlacademy"/>
+              </svg>
+            </a>
           </p>
         </div>
       </footer>

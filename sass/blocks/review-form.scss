@@ -140,6 +140,19 @@
     color: black;
   }
 
+  &--name,
+  &--contact {
+    &:hover {
+      background-color: $color-input-hover;
+    }
+
+    &:focus {
+      background-color: white;
+
+      outline: 4px solid $color-input-hover;
+    }
+  }
+
   &--name {
     width: 100%;
   }
@@ -174,6 +187,14 @@
       background-color: $color-input;
     }
 
+    &:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:active::before {
+      background-color: $color-input-down;
+    }
+
     &:checked::before {
       content: "";
       display: block;
@@ -190,6 +211,16 @@
       border-radius: 50%;
 
       background-color: black;
+    }
+
+    &:checked:hover::before {
+      border: 17px solid $color-input-hover;
+    }
+
+    &:checked:active::before {
+      border: 17px solid $color-input-down;
+
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -215,6 +246,14 @@
       background-color: $color-input;
     }
 
+    &:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:active::before {
+      background-color: $color-input-down;
+    }
+
     &:checked::before {
       content: "";
       display: block;
@@ -228,11 +267,35 @@
       height: 56px;
 
       border-radius: 6px;
+    }
 
-      background-color: $color-input;
+    &:checked::after {
+      content: "";
+      display: block;
+
+      position: absolute;
+
+      top: -15px;
+      left: 0;
+
+      width: 56px;
+      height: 56px;
+
       background-image: url("../img/icon-tick.svg");
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    &:checked:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:checked:active::before {
+      background-color: $color-input-down;
+    }
+
+    &:checked:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -291,6 +354,16 @@
     line-height: 26px;
     font-weight: 700;
     color: black;
+  }
+
+  &:hover {
+    background-color: $color-input-hover;
+  }
+
+  &:focus {
+    background-color: white;
+
+    outline: 4px solid $color-input-hover;
   }
 }
 
@@ -693,7 +766,9 @@
   }
 
   .review-form__icon {
-    top: -1px;
+    height: 58px;
+
+    top: 0;
     right: 0;
 
     &--tel {

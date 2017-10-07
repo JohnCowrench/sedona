@@ -37,6 +37,18 @@
     background-color: $blue-down;
   }
 
+  &--active {
+    color: $active;
+
+    &:hover {
+      color: $active-hover;
+    }
+
+    &:active {
+      color: $active-down;
+    }
+  }
+
   &--shadow {
     box-shadow: inset -4px -7px 6px -6px rgba(0, 0, 0, 0.2);
   }
@@ -75,8 +87,12 @@
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.3);
       background-color: transparent;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--active {
+      color: $active;
     }
 
     &--shadow {
