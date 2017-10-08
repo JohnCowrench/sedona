@@ -11,6 +11,13 @@
   }
 }
 
+.map__interactive {
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+}
+
 @media (min-width: $tablet-width) {
   .map {
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");

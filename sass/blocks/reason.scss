@@ -143,6 +143,10 @@
     margin-top: 22px;
   }
 
+  .reason__img-wrapper {
+    width: 66.6666%;
+  }
+
   .reason__img {
     width: 100%;
   }
@@ -184,10 +188,12 @@
   }
 
   .reason__subtitle {
-    width: 150px;
+    width: 160px;
   }
 
   .reason__text {
+    width: 288px;
+
     &--second {
       width: 230px;
     }

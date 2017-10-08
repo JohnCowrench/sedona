@@ -31,6 +31,8 @@
     background-image: url("../img/text-sedona-index.svg");
 
     margin: auto 20px;
+
+    margin-top: 88px;
   }
 }
 
@@ -69,5 +71,9 @@
   .main-header__text {
     margin-top: 100px;
     min-height: 80px;
+
+    &--index {
+      min-height: 350px;
+    }
   }
 }
