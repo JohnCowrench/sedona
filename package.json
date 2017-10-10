@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
+    "svg4everybody": "^2.1.9",
     "svgxuse": "^1.2.4"
   }
 }

@@ -6,6 +6,12 @@
   }
 }
 
+.photo-item__link {
+  &:focus .photo-item__img {
+    box-shadow: 0 0 4px 4px lightblue;
+  }
+}
+
 .photo-item__img {
   display: block;
 
