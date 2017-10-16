@@ -745,6 +745,18 @@
   }
 
   .review-form__input {
+    &--first-name {
+      width: 325px;
+    }
+
+    &--surname {
+      width: 288px;
+    }
+
+    &--patronymic {
+      width: 292px;
+    }
+
     &--contact {
       width: 315px;
 
@@ -806,20 +818,6 @@
 
         right: 0;
       }
-    }
-  }
-
-  .review-form__input {
-    &--first-name {
-      width: 325px;
-    }
-
-    &--surname {
-      width: 288px;
-    }
-
-    &--patronymic {
-      width: 292px;
     }
   }
 
