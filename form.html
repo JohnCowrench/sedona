@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/picturefill.min.js" async></script>
-    <script defer src="node_modules/svgxuse/svgxuse.js"></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="page-wrapper">
 
       <header class="page-header">
@@ -51,15 +54,15 @@
               <ul class="review-form__list">
                 <li class="review-form__item review-form__item--name">
                   <label for="input-first-name" class="review-form__label review-form__label--name review-form__label--name">Имя*:</label>
-                  <input type="text" name="first-name" id="input-first-name" class="review-form__input review-form__input--name" placeholder="Петр">
+                  <input type="text" name="first-name" id="input-first-name" class="review-form__input review-form__input--name review-form__input--first-name" placeholder="Петр" required>
                 </li>
                 <li class="review-form__item review-form__item--name">
                   <label for="input-family" class="review-form__label review-form__label--name">Фамилия*:</label>
-                  <input type="text" name="family" id="input-family" class="review-form__input review-form__input--name review-form__input--surname" placeholder="Иванов">
+                  <input type="text" name="family" id="input-family" class="review-form__input review-form__input--name review-form__input--surname" placeholder="Иванов" required>
                 </li>
                 <li class="review-form__item review-form__item--name">
                   <label for="input-patronymic" class="review-form__label review-form__label--name">Отчество:</label>
-                  <input type="text" name="patronymic" id="input-patronymic" class="review-form__input review-form__input--name" placeholder="Александрович">
+                  <input type="text" name="patronymic" id="input-patronymic" class="review-form__input review-form__input--name review-form__input--patronymic" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
@@ -68,12 +71,12 @@
               <ul class="review-form__list review-form__list--contact">
                 <li class="review-form__item review-form__item--contact">
                   <label for="input-tel" class="review-form__label review-form__label--contact"><span class="invisible-desktop">Контактный</span> телефон*:</label>
-                  <input type="tel" name="tel" id="input-tel" class="review-form__input review-form__input--contact" placeholder="Введите телефон">
+                  <input type="tel" name="tel" id="input-tel" class="review-form__input review-form__input--contact" placeholder="Введите телефон" required>
                   <div class="review-form__icon review-form__icon--tel"></div>
                 </li>
                 <li class="review-form__item review-form__item--contact">
                   <label for="input-email" class="review-form__label review-form__label--contact">Электронная почта*:</label>
-                  <input type="email" name="email" id="input-email" class="review-form__input review-form__input--contact" placeholder="Введите e-mail">
+                  <input type="email" name="email" id="input-email" class="review-form__input review-form__input--contact" placeholder="Введите e-mail" required>
                   <div class="review-form__icon review-form__icon--email"></div>
                 </li>
               </ul>
@@ -137,7 +140,7 @@
               <a href="twitter.com" class="social__link social__link--twitter">
                 Мы в Твиттере
                 <svg class="social__icon social__icon--twitter" width="17.5" height="14.663">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-twitter"/>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#spr-icon-twitter"/>
                 </svg>
               </a>
             </li>
@@ -145,7 +148,7 @@
               <a href="facebook.com" class="social__link social__link--facebook">
                 Мы в Фейсбуке
                 <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--facebook" width="8.672" height="18.944">
-                  <use xlink:href="img/sprite.svg#icon-facebook"/>
+                  <use xlink:href="#spr-icon-facebook"/>
                 </svg>
               </a>
             </li>
@@ -153,7 +156,7 @@
               <a href="youtube.com" class="social__link social__link--youtube">
                 Мы в Ютубе
                 <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--youtube" width="19.979" height="14.015">
-                  <use xlink:href="img/sprite.svg#icon-youtube"/>
+                  <use xlink:href="#spr-icon-youtube"/>
                 </svg>
               </a>
             </li>
@@ -166,7 +169,7 @@
             <a href="https://htmlacademy.ru/intensive/adaptive" class="powered-by__link">
               Html Academy
               <svg xmlns="http://www.w3.org/2000/svg" class="powered-by__icon" width="26.943" height="34.09">
-                <use xlink:href="img/sprite.svg#logo-htmlacademy"/>
+                <use xlink:href="#spr-logo-htmlacademy"/>
               </svg>
             </a>
           </p>

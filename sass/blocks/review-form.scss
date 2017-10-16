@@ -560,6 +560,20 @@
     }
   }
 
+  .review-form__input {
+    &--first-name {
+      width: 189px;
+    }
+
+    &--surname {
+      width: 152px;
+    }
+
+    &--patronymic {
+      width: 156px;
+    }
+  }
+
   .review-form__list {
     &--attraction {
       display: flex;
@@ -792,6 +806,20 @@
 
         right: 0;
       }
+    }
+  }
+
+  .review-form__input {
+    &--first-name {
+      width: 325px;
+    }
+
+    &--surname {
+      width: 288px;
+    }
+
+    &--patronymic {
+      width: 292px;
     }
   }
 

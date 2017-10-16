@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/picturefill.min.js" async></script>
-    <script defer src="node_modules/svgxuse/svgxuse.js"></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="page-wrapper">
 
       <header class="page-header">
@@ -78,7 +81,7 @@
           </div>
           <div class="reason__part">
             <div class="reason__part-column reason__part-column--second">
-              <h3 class="reason__subtitle">Там есть<br class="visually-space visually-space--tablet">Мост Дьявола</h3>
+              <h3 class="reason__subtitle">Там есть<br class="visually-space visually-space--tablet"> Мост Дьявола</h3>
               <p class="reason__number">&#151; №2 &#151;</p>
               <p class="reason__text reason__text--image reason__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
@@ -141,7 +144,7 @@
               <a href="twitter.com" class="social__link social__link--twitter">
                 Мы в Твиттере
                 <svg class="social__icon social__icon--twitter" width="17.5" height="14.663">
-                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#icon-twitter"/>
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#spr-icon-twitter"/>
                 </svg>
               </a>
             </li>
@@ -149,7 +152,7 @@
               <a href="facebook.com" class="social__link social__link--facebook">
                 Мы в Фейсбуке
                 <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--facebook" width="8.672" height="18.944">
-                  <use xlink:href="img/sprite.svg#icon-facebook"/>
+                  <use xlink:href="#spr-icon-facebook"/>
                 </svg>
               </a>
             </li>
@@ -157,7 +160,7 @@
               <a href="youtube.com" class="social__link social__link--youtube">
                 Мы в Ютубе
                 <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--youtube" width="19.979" height="14.015">
-                  <use xlink:href="img/sprite.svg#icon-youtube"/>
+                  <use xlink:href="#spr-icon-youtube"/>
                 </svg>
               </a>
             </li>
@@ -170,7 +173,7 @@
             <a href="https://htmlacademy.ru/intensive/adaptive" class="powered-by__link">
               Html Academy
               <svg xmlns="http://www.w3.org/2000/svg" class="powered-by__icon" width="26.943" height="34.09">
-                <use xlink:href="img/sprite.svg#logo-htmlacademy"/>
+                <use xlink:href="#spr-logo-htmlacademy"/>
               </svg>
             </a>
           </p>
