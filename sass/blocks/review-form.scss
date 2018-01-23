@@ -20,6 +20,12 @@
   &:nth-child(2) {
     margin-bottom: 26px;
   }
+
+  &--attraction {
+    border-bottom: 1px solid $gray-border;
+
+    padding-bottom: 23px;
+  }
 }
 
 .review-form__legend {
@@ -36,6 +42,12 @@
   border-top: 1px solid $gray-border;
 
   padding-top: 19px;
+
+  &--emotions {
+    padding-top: 0;
+
+    border: none;
+  }
 }
 
 .review-form__list {
@@ -57,7 +69,8 @@
     flex-direction: row;
     align-items: center;
 
-    margin-top: 20px;
+    margin-top: 18px;
+    margin-bottom: 4px;
   }
 
   &--contact {
@@ -108,12 +121,68 @@
 
   &--impression,
   &--attraction {
+    position: relative;
+
     font-size: 18px;
     font-weight: 700;
     text-transform: none;
     color: black;
 
     margin-left: 79px;
+  }
+
+  &--impression {
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+
+      top: -15px;
+      left: -75px;
+
+      width: 56px;
+      height: 56px;
+
+      border-radius: 50%;
+
+      background-color: $color-input;
+    }
+
+    &:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:active::before {
+      background-color: $color-input-down;
+    }
+  }
+
+  &--attraction {
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+
+      top: -15px;
+      left: -80px;
+
+      width: 56px;
+      height: 56px;
+
+      border-radius: 6px;
+
+      background-color: $color-input;
+    }
+
+    &:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:active::before {
+      background-color: $color-input-down;
+    }
   }
 }
 
@@ -134,10 +203,20 @@
   background-color: $color-input;
 
   &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
     color: black;
+  }
+
+  &--name,
+  &--contact {
+    &:hover {
+      background-color: $color-input-hover;
+    }
+
+    &:focus {
+      background-color: white;
+
+      outline: 4px solid $color-input-hover;
+    }
   }
 
   &--name {
@@ -149,22 +228,14 @@
   }
 
   &--impression {
-    position: absolute;
-
-    transform: translateX(10px);
-
-    outline: none;
-
-    &::before {
+    &:checked + .review-form__label--impression::before {
       content: "";
       display: block;
 
       position: absolute;
 
-      transform: translateX(-10px);
-
       top: -15px;
-      left: 0;
+      left: -75px;
 
       width: 56px;
       height: 56px;
@@ -174,65 +245,78 @@
       background-color: $color-input;
     }
 
-    &:checked::before {
+    &:checked + .review-form__label--impression:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:checked + .review-form__label--impression:active::before {
+      background-color: $color-input-down;
+    }
+
+    &:checked + .review-form__label--impression::after {
       content: "";
       display: block;
 
       position: absolute;
 
-      top: -15px;
-      left: 0;
+      top: 3px;
+      left: -58px;
 
-      width: 22px;
-      height: 22px;
-
-      border: 17px solid $color-input;
+      width: 21px;
+      height: 21px;
       border-radius: 50%;
 
       background-color: black;
     }
+
+    &:checked + .review-form__label--impression:active::after {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   &--attraction {
-    position: absolute;
-
-    outline: none;
-
-    &::before {
+    &:checked + .review-form__label--attraction::before {
       content: "";
       display: block;
 
       position: absolute;
 
       top: -15px;
-      left: 0;
+      left: -80px;
 
       width: 56px;
       height: 56px;
 
       border-radius: 6px;
-
-      background-color: $color-input;
     }
 
-    &:checked::before {
+    &:checked + .review-form__label--attraction::after {
       content: "";
       display: block;
 
       position: absolute;
 
       top: -15px;
-      left: 0;
+      left: -80px;
 
       width: 56px;
       height: 56px;
 
-      border-radius: 6px;
-
-      background-color: $color-input;
       background-image: url("../img/icon-tick.svg");
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    &:checked + .review-form__label--attraction:hover::before {
+      background-color: $color-input-hover;
+    }
+
+    &:checked + .review-form__label--attraction:active::before {
+      background-color: $color-input-down;
+    }
+
+    &:checked + .review-form__label--attraction:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -292,6 +376,16 @@
     font-weight: 700;
     color: black;
   }
+
+  &:hover {
+    background-color: $color-input-hover;
+  }
+
+  &:focus {
+    background-color: white;
+
+    outline: 4px solid $color-input-hover;
+  }
 }
 
 .review-form__button {
@@ -329,6 +423,12 @@
       order: -2;
 
       width: 50%;
+    }
+
+    &--attraction {
+      border-bottom: none;
+
+      padding-bottom: 0;
     }
   }
 
@@ -381,8 +481,8 @@
 
     &--attraction {
       padding-top: 25px;
-
-      width: 400px;
+      padding-right: 183px;
+      padding-left: 183px;
 
       &::before {
         content: "";
@@ -391,7 +491,7 @@
         position: absolute;
 
         top: 48px;
-        left: -124px;
+        left: 60px;
 
         width: 125px;
         height: 1px;
@@ -406,7 +506,7 @@
         position: absolute;
 
         top: 48px;
-        right: -124px;
+        right: 60px;
 
         width: 125px;
         height: 1px;
@@ -653,16 +753,19 @@
     }
 
     &--attraction {
+      padding-right: 400px;
+      padding-left: 400px;
+
       &::before {
         width: 280px;
 
-        left: -280px;
+        left: 120px;
       }
 
       &::after {
         width: 280px;
 
-        right: -280px;
+        right: 120px;
       }
     }
 
@@ -693,7 +796,9 @@
   }
 
   .review-form__icon {
-    top: -1px;
+    height: 58px;
+
+    top: 0;
     right: 0;
 
     &--tel {
