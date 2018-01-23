@@ -228,6 +228,11 @@
   }
 
   &--impression {
+    &:focus + .review-form__label--impression::before,
+    &:checked:focus + .review-form__label--impression::before {
+      background-color: $color-input-hover;
+    }
+
     &:checked + .review-form__label--impression::before {
       content: "";
       display: block;
@@ -245,7 +250,7 @@
       background-color: $color-input;
     }
 
-    &:checked + .review-form__label--impression:hover::before {
+    &:checked + .review-form__label--impression:hover::before, {
       background-color: $color-input-hover;
     }
 
@@ -275,6 +280,11 @@
   }
 
   &--attraction {
+    &:focus + .review-form__label--attraction::before,
+    &:checked:focus + .review-form__label--attraction::before {
+      background-color: $color-input-hover;
+    }
+
     &:checked + .review-form__label--attraction::before {
       content: "";
       display: block;
@@ -364,6 +374,8 @@
   border: none;
 
   box-sizing: border-box;
+
+  resize: none;
 
   min-height: 160px;
   width: 100%;
@@ -550,6 +562,20 @@
     }
   }
 
+  .review-form__input {
+    &--first-name {
+      width: 189px;
+    }
+
+    &--surname {
+      width: 152px;
+    }
+
+    &--patronymic {
+      width: 156px;
+    }
+  }
+
   .review-form__list {
     &--attraction {
       display: flex;
@@ -665,6 +691,7 @@
     &--contact {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       margin: 0 120px;
 
@@ -720,6 +747,18 @@
   }
 
   .review-form__input {
+    &--first-name {
+      width: 325px;
+    }
+
+    &--surname {
+      width: 288px;
+    }
+
+    &--patronymic {
+      width: 292px;
+    }
+
     &--contact {
       width: 315px;
 

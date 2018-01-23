@@ -4,6 +4,7 @@ var menu = nav.querySelector(".general-nav__site-list");
 var menuButton = nav.querySelector(".general-nav__toggle");
 
 menu.classList.remove("general-nav__site-list--no-js");
+menu.classList.add("general-nav__site-list--closed");
 
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();

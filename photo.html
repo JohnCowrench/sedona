@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - фото и видео</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
-    <script defer src="node_modules/svgxuse/svgxuse.js"></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="page-wrapper">
 
       <header class="page-header">
@@ -21,7 +24,7 @@
         </a>
         <nav class="page-header__general-nav general-nav">
           <button class="general-nav__toggle general-nav__toggle--opened" type="button">Открыть меню</button>
-          <ul class="general-nav__site-list general-nav__site-list--closed general-nav__site-list--no-js site-list">
+          <ul class="general-nav__site-list general-nav__site-list--no-js site-list">
             <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
             <li class="site-list__item"><a class="site-list__link site-list__link--active">Фото и видео</a></li>
             <li class="site-list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
@@ -43,6 +46,10 @@
             <li class="photo__item photo-item photo-item--general">
               <a href="#" class="photo-item__link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                   <img class="photo-item__img photo-item__img--general" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"  alt="Фотография Неродные Просторы">
@@ -52,8 +59,8 @@
                 <b class="photo-item__name">Неродные Просторы</b>
                 <p class="photo-item__author">Автор фото: Борис</p>
                 <p class="photo-item__like photo-item__like--general">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22px" height="20px">
-                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22" height="20">
+                    <use xlink:href="#spr-icon-like"/>
                   </svg>
                   1350
                 </p>
@@ -62,6 +69,10 @@
             <li class="photo__item photo-item">
               <a href="#" class="photo-item__link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                   <img class="photo-item__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фотография Местная Растительность">
@@ -71,8 +82,8 @@
                 <b class="photo-item__name">Местная Растительность</b>
                 <p class="photo-item__author">Автор фото: Сергей</p>
                 <p class="photo-item__like">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22px" height="20px">
-                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22" height="20">
+                    <use xlink:href="#spr-icon-like"/>
                   </svg>
                   143
                 </p>
@@ -81,6 +92,10 @@
             <li class="photo__item photo-item">
               <a href="#" class="photo-item__link">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                   <img class="photo-item__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фотография Дорога На Север">
@@ -90,8 +105,8 @@
                 <b class="photo-item__name">Дорога На Север</b>
                 <p class="photo-item__author">Автор фото: Петр</p>
                 <p class="photo-item__like">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22px" height="20px">
-                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22" height="20">
+                    <use xlink:href="#spr-icon-like"/>
                   </svg>
                   96
                 </p>
@@ -109,8 +124,8 @@
                 <b class="photo-item__name">Мост Дьявола</b>
                 <p class="photo-item__author">Автор фото: Антон</p>
                 <p class="photo-item__like">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22px" height="20px">
-                    <use xlink:href="img/svg-changing.svg#icon-like"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="photo-item__icon-like" width="22" height="20">
+                    <use xlink:href="#spr-icon-like"/>
                   </svg>
                   254
                 </p>
@@ -127,14 +142,14 @@
             <div class="video-player__img"></div>
             <div class="video-player__range"></div>
             <div class="video-player__control">
-              <svg xmlns="http://www.w3.org/2000/svg" class="video-player__icon video-player__icon--replay" width="16px" height="20px">
-                <use xlink:href="img/svg-changing.svg#icon-replay"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="video-player__icon video-player__icon--replay" width="16" height="20">
+                <use xlink:href="#spr-icon-video-replay"/>
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="video-player__icon video-player__icon--subtitles" width="32px" height="20px">
-                <use xlink:href="img/svg-changing.svg#icon-subtitles"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="video-player__icon video-player__icon--subtitles" width="32" height="20">
+                <use xlink:href="#spr-icon-video-subtitles"/>
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="video-player__icon video-player__icon--fullscreen" width="20px" height="20px">
-                <use xlink:href="img/svg-changing.svg#icon-fullscreen"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="video-player__icon video-player__icon--fullscreen" width="20" height="20">
+                <use xlink:href="#spr-icon-video-fullscreen"/>
               </svg>
             </div>
           </div>
@@ -149,24 +164,24 @@
             <li class="social__item">
               <a href="twitter.com" class="social__link social__link--twitter">
                 Мы в Твиттере
-                <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--twitter" width="17.5px" height="14.663px">
-                  <use xlink:href="img/svg-changing.svg#icon-twitter"/>
+                <svg class="social__icon social__icon--twitter" width="17.5" height="14.663">
+                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#spr-icon-twitter"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="facebook.com" class="social__link social__link--facebook">
                 Мы в Фейсбуке
-                <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--facebook" width="8.672px" height="18.944px">
-                  <use xlink:href="img/svg-changing.svg#icon-facebook"/>
+                <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--facebook" width="8.672" height="18.944">
+                  <use xlink:href="#spr-icon-facebook"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="youtube.com" class="social__link social__link--youtube">
                 Мы в Ютубе
-                <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--youtube" width="19.979px" height="14.015px">
-                  <use xlink:href="img/svg-changing.svg#icon-youtube"/>
+                <svg xmlns="http://www.w3.org/2000/svg" class="social__icon social__icon--youtube" width="19.979" height="14.015">
+                  <use xlink:href="#spr-icon-youtube"/>
                 </svg>
               </a>
             </li>
@@ -178,8 +193,8 @@
             Разработано
             <a href="https://htmlacademy.ru/intensive/adaptive" class="powered-by__link">
               Html Academy
-              <svg xmlns="http://www.w3.org/2000/svg" class="powered-by__icon" width="26.943px" height="34.09px">
-                <use xlink:href="img/svg-changing.svg#icon-htmlacademy"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="powered-by__icon" width="26.943" height="34.09">
+                <use xlink:href="#spr-logo-htmlacademy"/>
               </svg>
             </a>
           </p>
